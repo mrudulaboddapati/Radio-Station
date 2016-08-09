@@ -22,7 +22,41 @@ public class Station
 	 * organization of the PSA
 	 */
 	private String organization;
-
+    public Station() 
+    {
+    	audios=new ArrayList<Audio>();
+    	playLists=new ArrayList<PlayList>();
+    	    	  		
+    	    
+    }
+    public void addAudio(Audio audio)
+    {
+    	audios.add(audio);
+    
+    }
+    public void removeAudio(Audio audio)
+    {
+    	audios.remove(audio);
+    
+    }
+    public ArrayList <Audio> getAudios()
+    {
+    	return audios;
+    }
+    public void addPlayList(PlayList playlist)
+    {
+    	playLists.add(playlist);
+    
+    }
+    public void removePlayList(PlayList playlist)
+    {
+    	playLists.remove(playlist);
+    
+    }
+    public ArrayList <PlayList> getPlayLists()
+    {
+    	return playLists;
+    }
 	public String getStationName()
 	{
 		return this.stationName;
